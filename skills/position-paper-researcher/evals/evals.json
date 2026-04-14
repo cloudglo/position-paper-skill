@@ -1,0 +1,68 @@
+{
+  "skill_name": "position",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/position Coder",
+      "expected_output": "Position paper for Coder (coder.com) covering cloud development environments with buy/wait/no-buy recommendation",
+      "files": [],
+      "expectations": [
+        "Output contains a clear BUY, WAIT, or NO BUY recommendation in the title/heading area",
+        "Output contains a 'What Coder Does' or equivalent section describing the product",
+        "Output contains a Company Snapshot section or table with funding, founding, and leadership details",
+        "Output contains a Benefits section with at least 4 numbered benefits",
+        "Output contains a Risks section presented as a table with severity and mitigation columns",
+        "Output contains a Competitive Moat Assessment section with at least 3 moat layers",
+        "Output contains a Feature Comparison table against at least one competitor (e.g., GitHub Codespaces)",
+        "Output contains a Market Context section with analyst or market trend references",
+        "Output contains a final Recommendation section with supporting rationale bullets",
+        "Output does NOT contain placeholder text like {Company} or {detail}"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "/position Datadog --focus cost",
+      "expected_output": "Position paper for Datadog with emphasis on cost/pricing analysis in the recommendation",
+      "files": [],
+      "expectations": [
+        "Output contains a clear BUY, WAIT, or NO BUY recommendation",
+        "Output contains a product description section explaining what Datadog does",
+        "Output contains a Company Snapshot with financial details (Datadog is public, so revenue/growth should be available)",
+        "Output contains a Risks section that addresses pricing/cost concerns prominently",
+        "Output contains a Feature Comparison against at least one competitor in the observability space",
+        "Output contains a Recommendation section where cost considerations are weighted in the rationale",
+        "Output references Datadog's public financial data (revenue, growth rate, or market cap)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "/position \"Tailscale\" --save",
+      "expected_output": "Position paper for Tailscale saved to docs/position-papers/tailscale-2026.md",
+      "files": [],
+      "expectations": [
+        "Output contains a clear BUY, WAIT, or NO BUY recommendation",
+        "Output contains a product description covering Tailscale's mesh VPN / zero-trust networking",
+        "Output contains a Competitive Moat Assessment section",
+        "Output contains a Feature Comparison against at least one competitor (e.g., WireGuard, Cloudflare WARP, Zscaler)",
+        "A file was saved to docs/position-papers/tailscale-2026.md or similar path",
+        "The saved file contains the same structured position paper content"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "/position Snowflake --context \"3k-person healthcare SaaS, HIPAA + SOC2, multi-cloud (AWS + Azure), Okta SSO, must export audit logs to Splunk, data residency required in US and EU\"",
+      "expected_output": "Position paper for Snowflake tailored to a regulated healthcare enterprise shape",
+      "files": [],
+      "expectations": [
+        "Output contains a clear BUY, WAIT, or NO BUY recommendation",
+        "Output contains a product description of Snowflake's data cloud / warehouse",
+        "Output contains a Total Cost of Ownership section with license, implementation, operations, and training cost components",
+        "Output contains an Integration Checklist table covering SSO, SCIM, audit log export, API coverage, data residency, deployment options, and compliance certifications",
+        "Output contains an Exit & Data Portability section covering data export, API standards, migration path, and lock-in risk",
+        "Output explicitly references the stated context — HIPAA, SOC2, multi-cloud, Okta, Splunk, or US/EU data residency appear in the fit analysis",
+        "Output contains a 'Fit for your context' paragraph or equivalent near the Recommendation that ties the call back to the stated enterprise shape",
+        "Output does NOT contain placeholder text like {Company} or {detail}"
+      ]
+    }
+  ]
+}

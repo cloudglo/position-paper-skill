@@ -1,0 +1,10 @@
+{
+  "name": "position-paper-skill",
+  "version": "0.1.0",
+  "description": "Research a company or technology product and produce an enterprise-ready position paper with a buy/wait/no-buy recommendation. Context-aware: pass your enterprise shape (size, regulatory posture, integrations) and the paper is tailored to your fit.",
+  "author": {
+    "name": "cloudglo"
+  },
+  "homepage": "https://github.com/cloudglo/position-paper-skill",
+  "repository": "https://github.com/cloudglo/position-paper-skill"
+}
