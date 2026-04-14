@@ -1,0 +1,13 @@
+{
+  "name": "cloudglo-plugins",
+  "owner": {
+    "name": "cloudglo"
+  },
+  "plugins": [
+    {
+      "name": "position-paper-skill",
+      "source": "./",
+      "description": "Research a company or technology product and produce an enterprise position paper with a buy/wait/no-buy recommendation. Supports --context for tailoring to your enterprise shape."
+    }
+  ]
+}

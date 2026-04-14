@@ -10,11 +10,24 @@ When invoked with `--context`, the paper is tailored to your enterprise shape â€
 
 ## Install
 
+This repo ships as a single-plugin Claude Code marketplace. Two steps:
+
 ```
-/plugin install cloudglo/position-paper-skill
+/plugin marketplace add git@github.com:cloudglo/position-paper-skill.git
+/plugin install position-paper-skill@cloudglo-plugins
 ```
 
-Or clone and reference locally:
+The first command registers the marketplace catalog (clones the repo to `~/.claude/plugins/marketplaces/`). The second installs the plugin. Pull updates later with `/plugin marketplace update cloudglo-plugins`.
+
+HTTPS also works if you have a GitHub credential helper configured:
+
+```
+/plugin marketplace add https://github.com/cloudglo/position-paper-skill.git
+```
+
+### Fallback: direct clone
+
+If you want to skip the marketplace plumbing, clone directly into your plugins dir:
 
 ```
 git clone git@github.com:cloudglo/position-paper-skill.git ~/.claude/plugins/position-paper-skill
